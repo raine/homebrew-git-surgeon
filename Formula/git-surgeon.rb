@@ -1,5 +1,5 @@
 class GitSurgeon < Formula
-  desc "Surgical git hunk control for AI agents"
+  desc "Non-interactive hunk-level git staging for AI agents"
   homepage "https://github.com/raine/git-surgeon"
   version "0.1.0"
   license "MIT"
@@ -29,6 +29,6 @@ class GitSurgeon < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/git-surgeon --version")
+    assert_match version.to_s, shell_output("\#{bin}/git-surgeon --version")
   end
 end
