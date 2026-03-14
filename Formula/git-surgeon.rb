@@ -1,26 +1,26 @@
 class GitSurgeon < Formula
   desc "Non-interactive hunk-level git staging for AI agents"
   homepage "https://github.com/raine/git-surgeon"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/git-surgeon/releases/download/v0.1.10/git-surgeon-darwin-arm64.tar.gz"
-      sha256 "e7bb98ec865b7add2f064d21827515edae829c077ecc7e35324cb7d53255392d"
+      url "https://github.com/raine/git-surgeon/releases/download/v0.1.11/git-surgeon-darwin-arm64.tar.gz"
+      sha256 "a64ad60369f4ded15aa988b5c74ae2d0e94122f47608ee780874eb50e930760d"
     else
-      url "https://github.com/raine/git-surgeon/releases/download/v0.1.10/git-surgeon-darwin-amd64.tar.gz"
-      sha256 "36a4a19979ece92cd3007776ab8be26319a0dab72d31003891676e24dd527121"
+      url "https://github.com/raine/git-surgeon/releases/download/v0.1.11/git-surgeon-darwin-amd64.tar.gz"
+      sha256 "8ddb981a63e9427a8abc4cdcf597d3051ad2e2b4dc62ed03383c1921c83a0fad"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/git-surgeon/releases/download/v0.1.10/git-surgeon-linux-arm64.tar.gz"
-      sha256 "bcb5f74b739c2c5ae759be06aa2cfc2b2a7b4010e2fd443bf99e7a6bca284260"
+      url "https://github.com/raine/git-surgeon/releases/download/v0.1.11/git-surgeon-linux-arm64.tar.gz"
+      sha256 "3de2bd4f089dd176db84ab853f154660e36b36b882a0ae28e05231db845c5336"
     else
-      url "https://github.com/raine/git-surgeon/releases/download/v0.1.10/git-surgeon-linux-amd64.tar.gz"
-      sha256 "3bb5b3ce7f7989927bea90c5c667971380bb57c6e2c640cc2e1edee44b991ef8"
+      url "https://github.com/raine/git-surgeon/releases/download/v0.1.11/git-surgeon-linux-amd64.tar.gz"
+      sha256 "2ff1c3dab6aed445b51b432a55bc6c344377f97f7efc496cb0a7b372a1c24c20"
     end
   end
 
